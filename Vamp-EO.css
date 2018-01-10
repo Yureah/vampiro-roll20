@@ -1,0 +1,43 @@
+/*----- fondo -----*/
+
+body {
+    background: url("Vampiro fondo.png");
+}
+
+/*-----texto-----*/
+
+h5 {
+	text-align: center;
+    text-shadow: 0px 0px 10px black;
+    color:black;
+}
+
+th {
+	text-align: center;
+    text-shadow: 0px 0px 10px black;
+    color:black;
+}
+
+h4 {
+	text-align: center;
+    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+    color:black;
+}
+
+h3 {
+	text-align: center;
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black ;
+    color:whitesmoke;
+}
+
+h2 {
+	text-align: center;
+    background: black;
+    color:white;
+}
+
+h1{
+	text-align: center;
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black ;
+    color:whitesmoke;
+}
