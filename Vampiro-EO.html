@@ -1,172 +1,506 @@
-<head>
 <meta charset="utf-8">
-<link rel="STYLESHEET" type="text/css" href="Vamp-EO.css">
-</head>
+<p style="text-align: center;">
+<img src="Captura.PNG" style="max-height: 100px;" />
+</p>
 
-<body>
-<!-- Configuración Pestañas -->
-<input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Personaje" checked="checked"/> 
-    <span class="sheet-tab sheet-tab1" style='line-height: 40px;'>Primero</span>
-<input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Attributos & Abilidades" /> 
-    <span class="sheet-tab sheet-tab2" style='line-height: 40px;'>Segundo</span>
-<input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Ventajas" /> 
-    <span class="sheet-tab sheet-tab3" style='line-height: 40px;'>Tercero</span>
-<!-- <input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Forms" /> 
-   <span class="sheet-tab sheet-tab4" style='line-height: 40px;'>Fourth</span> -->
-<input type="radio" class="sheet-tab sheet-tab99" name="attr_core-tab" value="99" title="All" />
-    <span class="sheet-tab sheet-tab99" style='line-height: 40px;'>Todo</span>
-<!-- Fin Configuración Pestañas -->
-
-<div class="sheet-section-1">
-	<br>
-	<div class="sheet-tabbed-panel">
-        <div class="sheet-row-panel">
-            <!-- Datos de Personaje -->
-            <div class='sheet-3colrow'>
-                <div class='sheet-col'>
-                    <table>
-                        <tr>
-                            <td>Nombre</td>
-                            <td><input type="text" name="nombre_personaje" /></td>
-                        </tr>
-                        <tr>
-                            <td>Jugador</td>
-                            <td><input type="text" name="nombre_jugador" /></td>
-                        </tr>
-                        <tr>
-                            <td>Crónica</td>
-                            <td><input type="text" name="nombre_cronica" /></td>
-                        </tr>
-                    </table> 
-                </div> 
-                 <div class='sheet-col'>
-                    <table>
-                        <tr>
-                            <td>Naturaleza</td>
-                            <td><input type="text" name="naturaleza" /></td>
-                        </tr>
-                        <tr>
-                            <td>Conducta</td>
-                            <td><input type="text" name="conducta" /></td>
-                        </tr>
-                        <tr>
-                            <td>Clan</td>
-                            <td><input type="text" name="clan" /></td>
-                        </tr>
-                    </table> 
-                </div> 
-                <div class='sheet-col'>
-                    <table>
-                        <tr>
-                            <td>Generación</td>
-                            <td><input type="text" name="generacion" /></td>
-                        </tr>
-                        <tr>
-                            <td>Concepto</td>
-                            <td><input type="text" name="concepto" /></td>
-                        </tr>
-                        <tr>
-                            <td>Refugio</td>
-                            <td><input type="text" name="refugio" /></td>
-                        </tr>
-                    </table> 
-                </div> 
-            </div>
-            <div class="sheet-center" style="width:100%"><h2>Atributos</h2></div>
-            <!-- Attributes -->
-            <table style="width:100%">
-            <tr>
-            	<th colspan="2">Físicos</th>
-            	<th colspan="2">Sociales</th>
-            	<th colspan="2">Mentales</th>
-            </tr>
-            <tr>
-                <td><h4>Fuerza</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_fue" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_fue" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_fue" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_fue" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_fue" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_fue" value="5" /><span></span>
-                </td>
-                <td><h4>Carisma</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_car" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_car" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_car" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_car" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_car" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_car" value="5" /><span></span>
-                </td>
-                <td><h4>Percepción</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_per" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_per" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_per" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_per" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_per" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_per" value="5" /><span></span>
-                </td>
-            </tr>
-            <tr>
-                <td><h4>Destreza</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_des" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_des" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_des" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_des" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_des" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_des" value="5" /><span></span>
-                </td>
-                <td><h4>Manipulación</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_man" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_man" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_man" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_man" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_man" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_man" value="5" /><span></span>
-                </td>
-                <td><h4>Inteligencia</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_int" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_int" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_int" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_int" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_int" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_int" value="5" /><span></span>
-                </td>
-            </tr>
-            <tr>
-                <td><h4>Resistencia</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_res" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_res" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_res" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_res" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_res" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_res" value="5" /><span></span>
-                </td>
-                <td><h4>Apariencia</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_apa" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_apa" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_apa" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_apa" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_apa" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_apa" value="5" /><span></span>
-                </td>         
-                <td><h4>Astucia</h4></td>
-                <td>
-                    <input type="radio" class="sheet-normal sheet-zero" name="attr_ast" value="0" checked="checked" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_ast" value="1" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_ast" value="2" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_ast" value="3" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_ast" value="4" /><span></span>
-                    <input type="radio" class="sheet-normal" name="attr_ast" value="5" /><span></span>
-                </td>
-            </tr>
-        </table> 
+<div class="sheet-3colrow">
+    <div class="sheet-col">
+        <label>Nombre:</label><input type="text" name="attr_Nombre" />
+        <label>Jugador:</label><input type="text" name="attr_Jugador" />
+        <label>Crónica:</label><input type="text" name="attr_Cronica" />
+    </div>
+    <div class="sheet-col">
+        <label>Naturaleza:</label><input type="text" name="attr_Naturaleza" />
+        <label>Conducta:</label><input type="text" name="attr_Conducta" />
+        <label>Clan:</label><input type="text" name="attr_Clan" />
+    </div>
+    <div class="sheet-col">
+        <label>Generación:</label><input type="text" name="attr_Generacion" />
+        <label>Concepto:</label><input type="text" name="attr_Concepto" />
+        <label>Refugio:</label><input type="text" name="attr_Refugio" />
+    </div>
 </div>
-</body>
+
+<hr/>
+<div class="sheet-center" style="width:100%"><h2>Atributos</h2></div>
+            <!-- Attributos -->
+<div class="sheet-3colrow">
+    <div class="sheet-col">
+        <h3 style="text-align: center">Físicos</h3>
+    </div>
+    <div class="sheet-col">
+        <h3 style="text-align: center">Sociales</h3>
+    </div>
+    <div class="sheet-col">
+        <h3 style="text-align: center">Mentales</h3>
+    </div>
+</div>
+
+<div class="sheet-colrow" >
+    <div class="sheet-col" style="width:120px">
+        <h4>Fuerza</h4>
+        <h4>Destreza</h4>
+        <h4>Resistencia</h4>
+    </div>
+    <div class="sheet-col" style="width:150px">
+            <input type="radio" name="attr_Fuerza" value="1" checked="checked" />
+    		<span></span> <input type="radio" name="attr_Fuerza" value="2" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="3" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="4" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="5" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="6" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="7" />
+			<span></span> <input type="radio" name="attr_Fuerza" value="8" />
+			<span></span>
+        <div class="sheet-row">
+            <input type="radio" name="attr_Destreza" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Destreza" value="2" />
+			<span></span> <input type="radio" name="attr_Destreza" value="3" />
+			<span></span> <input type="radio" name="attr_Destreza" value="4" />
+			<span></span> <input type="radio" name="attr_Destreza" value="5" />
+			<span></span> <input type="radio" name="attr_Destreza" value="6" />
+			<span></span> <input type="radio" name="attr_Destreza" value="7" />
+			<span></span> <input type="radio" name="attr_Destreza" value="8" />
+			<span></span>
+        </div>
+        <div class="sheet-row">
+            <input type="radio" name="attr_Resistencia" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="2" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="3" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="4" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="5" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="6" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="7" />
+			<span></span> <input type="radio" name="attr_Resistencia" value="8" />
+			<span></span>
+        </div>
+    </div>
+    <div class="sheet-col" style="width:105px">
+        <h4>Carisma</h4>
+        <h4>Manipulación</h4>
+        <h4>Apariencia</h4>
+    </div>
+    <div class="sheet-col" style="width:160px" align="right">
+        <input type="radio" name="attr_Carisma" value="1" checked="checked" />
+		<span></span> <input type="radio" name="attr_Carisma" value="2" />
+		<span></span> <input type="radio" name="attr_Carisma" value="3" />
+		<span></span> <input type="radio" name="attr_Carisma" value="4" />
+		<span></span> <input type="radio" name="attr_Carisma" value="5" />
+		<span></span> <input type="radio" name="attr_Carisma" value="6" />
+		<span></span> <input type="radio" name="attr_Carisma" value="7" />
+		<span></span> <input type="radio" name="attr_Carisma" value="8" />
+		<span></span>
+        <div class="sheet-row">
+            <input type="radio" name="attr_Manipulacion" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="2" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="3" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="4" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="5" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="6" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="7" />
+			<span></span> <input type="radio" name="attr_Manipulacion" value="8" />
+			<span></span>
+        </div>
+        <div class="sheet-row">
+            <input type="radio" name="attr_Apariencia" value="0" class=" zero"/>
+			<span></span>
+			<input type="radio" name="attr_Apariencia" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="2" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="3" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="4" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="5" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="6" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="7" />
+			<span></span> <input type="radio" name="attr_Apariencia" value="8" />
+			<span></span>
+        </div>
+    </div>
+    <div class="sheet-col" style="width:5px">
+    </div>
+    <div class="sheet-col" style="width:115px">
+        <h4>Percepción</h4>
+        <h4>Inteligencia</h4>
+        <h4>Astucia</h4>
+    </div>
+    <div class="sheet-col" style="width:150px">
+        <div class="sheet-row">
+            <input type="radio" name="attr_Percepcion" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="2" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="3" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="4" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="5" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="6" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="7" />
+			<span></span> <input type="radio" name="attr_Percepcion" value="8" />
+			<span></span>
+        </div>
+        <input type="radio" name="attr_Inteligencia" value="1" checked="checked" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="2" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="3" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="4" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="5" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="6" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="7" />
+		<span></span> <input type="radio" name="attr_Inteligencia" value="8" />
+		<span></span>
+        <div class="sheet-row">
+            <input type="radio" name="attr_Astucia" value="1" checked="checked" />
+			<span></span> <input type="radio" name="attr_Astucia" value="2" />
+			<span></span> <input type="radio" name="attr_Astucia" value="3" />
+			<span></span> <input type="radio" name="attr_Astucia" value="4" />
+			<span></span> <input type="radio" name="attr_Astucia" value="5" />
+			<span></span> <input type="radio" name="attr_Astucia" value="6" />
+			<span></span> <input type="radio" name="attr_Astucia" value="7" />
+			<span></span> <input type="radio" name="attr_Astucia" value="8" />
+			<span></span>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="sheet-center" style="width:100%"><h2>Habilidades</h2></div>
+<!-- Habilidades -->
+
+<div class="sheet-3colrow">
+    <div class="sheet-col">
+        <h3 style="text-align: center">Talentos</h3>
+    </div>
+    <div class="sheet-col">
+        <h3 style="text-align: center">Técnicas</h3>
+    </div>
+    <div class="sheet-col">
+        <h3 style="text-align: center">Conocimientos</h3>
+    </div>
+</div>
+
+<div class="sheet-colrow">
+    <div class="sheet-col" style="width:100px">
+        <h4>Alerta</h4>
+        <h4>Atletismo</h4>
+        <h4>Empatía</h4>
+        <h4>Esquivar</h4>
+        <h4>Expresión</h4>
+        <h4>Intimidación</h4>
+        <h4>Liderazgo</h4>
+        <h4>Pelea</h4>
+        <h4>Prestidigitación</h4>
+        <h4>Subterfugio</h4>
+    </div>
+    <div class="sheet-col" style="width:170px">
+            <input type="radio" name="attr_Alerta" value="0" class=" zero" checked/><span></span>
+			<input type="radio" name="attr_Alerta" value="1" /><span></span>
+			<input type="radio" name="attr_Alerta" value="2" /><span></span>
+			<input type="radio" name="attr_Alerta" value="3" /><span></span>
+			<input type="radio" name="attr_Alerta" value="4" /><span></span>
+			<input type="radio" name="attr_Alerta" value="5" /><span></span>
+			<input type="radio" name="attr_Alerta" value="6" /><span></span>
+			<input type="radio" name="attr_Alerta" value="7" /><span></span>
+			<input type="radio" name="attr_Alerta" value="8" /><span></span>
+       
+	   <div class="sheet-row">
+            <input type="radio" name="attr_Atletismo" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Atletismo" value="1" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="2" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="3" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="4" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="5" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="6" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="7" />
+			<span></span> <input type="radio" name="attr_Atletismo" value="8" />
+			<span></span>
+        </div>
+
+        <div class="sheet-row">
+            <input type="radio" name="attr_Empatia" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Empatia" value="1" />
+			<span></span> <input type="radio" name="attr_Empatia" value="2" />
+			<span></span> <input type="radio" name="attr_Empatia" value="3" />
+			<span></span> <input type="radio" name="attr_Empatia" value="4" />
+			<span></span> <input type="radio" name="attr_Empatia" value="5" />
+			<span></span> <input type="radio" name="attr_Empatia" value="6" />
+			<span></span> <input type="radio" name="attr_Empatia" value="7" />
+			<span></span> <input type="radio" name="attr_Empatia" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Esquivar" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Esquivar" value="1" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="2" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="3" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="4" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="5" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="6" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="7" />
+			<span></span> <input type="radio" name="attr_Esquivar" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Expresion" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Expresion" value="1" />
+			<span></span> <input type="radio" name="attr_Expresion" value="2" />
+			<span></span> <input type="radio" name="attr_Expresion" value="3" />
+			<span></span> <input type="radio" name="attr_Expresion" value="4" />
+			<span></span> <input type="radio" name="attr_Expresion" value="5" />
+			<span></span> <input type="radio" name="attr_Expresion" value="6" />
+			<span></span> <input type="radio" name="attr_Expresion" value="7" />
+			<span></span> <input type="radio" name="attr_Expresion" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Intimidacion" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Intimidacion" value="1" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="2" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="3" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="4" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="5" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="6" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="7" />
+			<span></span> <input type="radio" name="attr_Intimidacion" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Liderazgo" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Liderazgo" value="1" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="2" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="3" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="4" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="5" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="6" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="7" />
+			<span></span> <input type="radio" name="attr_Liderazgo" value="8" />
+			<span></span>
+        </div>
+
+        <div class="sheet-row">
+            <input type="radio" name="attr_Pelea" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Pelea" value="1" />
+			<span></span> <input type="radio" name="attr_Pelea" value="2" />
+			<span></span> <input type="radio" name="attr_Pelea" value="3" />
+			<span></span> <input type="radio" name="attr_Pelea" value="4" />
+			<span></span> <input type="radio" name="attr_Pelea" value="5" />
+			<span></span> <input type="radio" name="attr_Pelea" value="6" />
+			<span></span> <input type="radio" name="attr_Pelea" value="7" />
+			<span></span> <input type="radio" name="attr_Pelea" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Prestidigitacion" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="1" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="2" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="3" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="4" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="5" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="6" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="7" />
+			<span></span> <input type="radio" name="attr_Prestidigitacion" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Subterfugio" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Subterfugio" value="1" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="2" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="3" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="4" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="5" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="6" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="7" />
+			<span></span> <input type="radio" name="attr_Subterfugio" value="8" />
+			<span></span>
+        </div>
+		
+    </div>
+ <!--    <div class="sheet-col" style="width:105px">
+        <h4>Animal Ken</h4>
+        <h4>Craft</h4>
+        <h4>Drive</h4>
+        <h4>Etiquette</h4>
+        <h4>Firearms</h4>
+        <h4>Melee</h4>
+        <h4>Performance</h4>
+        <h4>Security</h4>
+        <h4>Stealth</h4>
+        <h4>Survival</h4>
+    </div>
+	
+    <div class="sheet-col" style="width:160px" align="right">
+        <input type="radio" name="attr_Animal_Ken" value="0" class=" zero" checked/>
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="1" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="2" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="3" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="4" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="5" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="6" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="7" />
+		<span></span> <input type="radio" name="attr_Animal_Ken" value="8" />
+		<span></span>
+	
+	
+        <div class="sheet-row">
+            <input type="radio" name="attr_Craft" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Craft" value="1" />
+			<span></span> <input type="radio" name="attr_Craft" value="2" />
+			<span></span> <input type="radio" name="attr_Craft" value="3" />
+			<span></span> <input type="radio" name="attr_Craft" value="4" />
+			<span></span> <input type="radio" name="attr_Craft" value="5" />
+			<span></span> <input type="radio" name="attr_Craft" value="6" />
+			<span></span> <input type="radio" name="attr_Craft" value="7" />
+			<span></span> <input type="radio" name="attr_Craft" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Drive" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Drive" value="1" />
+			<span></span> <input type="radio" name="attr_Drive" value="2" />
+			<span></span> <input type="radio" name="attr_Drive" value="3" />
+			<span></span> <input type="radio" name="attr_Drive" value="4" />
+			<span></span> <input type="radio" name="attr_Drive" value="5" />
+			<span></span> <input type="radio" name="attr_Drive" value="6" />
+			<span></span> <input type="radio" name="attr_Drive" value="7" />
+			<span></span> <input type="radio" name="attr_Drive" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Etiquette" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Etiquette" value="1" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="2" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="3" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="4" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="5" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="6" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="7" />
+			<span></span> <input type="radio" name="attr_Etiquette" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Firearms" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Firearms" value="1" />
+			<span></span> <input type="radio" name="attr_Firearms" value="2" />
+			<span></span> <input type="radio" name="attr_Firearms" value="3" />
+			<span></span> <input type="radio" name="attr_Firearms" value="4" />
+			<span></span> <input type="radio" name="attr_Firearms" value="5" />
+			<span></span> <input type="radio" name="attr_Firearms" value="6" />
+			<span></span> <input type="radio" name="attr_Firearms" value="7" />
+			<span></span> <input type="radio" name="attr_Firearms" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Melee" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Melee" value="1" />
+			<span></span> <input type="radio" name="attr_Melee" value="2" />
+			<span></span> <input type="radio" name="attr_Melee" value="3" />
+			<span></span> <input type="radio" name="attr_Melee" value="4" />
+			<span></span> <input type="radio" name="attr_Melee" value="5" />
+			<span></span> <input type="radio" name="attr_Melee" value="6" />
+			<span></span> <input type="radio" name="attr_Melee" value="7" />
+			<span></span> <input type="radio" name="attr_Melee" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Performance" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Performance" value="1" />
+			<span></span> <input type="radio" name="attr_Performance" value="2" />
+			<span></span> <input type="radio" name="attr_Performance" value="3" />
+			<span></span> <input type="radio" name="attr_Performance" value="4" />
+			<span></span> <input type="radio" name="attr_Performance" value="5" />
+			<span></span> <input type="radio" name="attr_Performance" value="6" />
+			<span></span> <input type="radio" name="attr_Performance" value="7" />
+			<span></span> <input type="radio" name="attr_Performance" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Security" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Security" value="1" />
+			<span></span> <input type="radio" name="attr_Security" value="2" />
+			<span></span> <input type="radio" name="attr_Security" value="3" />
+			<span></span> <input type="radio" name="attr_Security" value="4" />
+			<span></span> <input type="radio" name="attr_Security" value="5" />
+			<span></span> <input type="radio" name="attr_Security" value="6" />
+			<span></span> <input type="radio" name="attr_Security" value="7" />
+			<span></span> <input type="radio" name="attr_Security" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Stealth" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Stealth" value="1" />
+			<span></span> <input type="radio" name="attr_Stealth" value="2" />
+			<span></span> <input type="radio" name="attr_Stealth" value="3" />
+			<span></span> <input type="radio" name="attr_Stealth" value="4" />
+			<span></span> <input type="radio" name="attr_Stealth" value="5" />
+			<span></span> <input type="radio" name="attr_Stealth" value="6" />
+			<span></span> <input type="radio" name="attr_Stealth" value="7" />
+			<span></span> <input type="radio" name="attr_Stealth" value="8" />
+			<span></span>
+        </div>
+		
+        <div class="sheet-row">
+            <input type="radio" name="attr_Survival" value="0" class=" zero" checked/>
+			<span></span> <input type="radio" name="attr_Survival" value="1" />
+			<span></span> <input type="radio" name="attr_Survival" value="2" />
+			<span></span> <input type="radio" name="attr_Survival" value="3" />
+			<span></span> <input type="radio" name="attr_Survival" value="4" />
+			<span></span> <input type="radio" name="attr_Survival" value="5" />
+			<span></span> <input type="radio" name="attr_Survival" value="6" />
+			<span></span> <input type="radio" name="attr_Survival" value="7" />
+			<span></span> <input type="radio" name="attr_Survival" value="8" />
+			<span></span>
+        </div>
+		
+    </div>
+    <div class="sheet-col" style="width:5px">
+    </div>      
+	        <div class="sheet-center" style="width:100%"><h2>Ventajas</h2></div> -->
+	        <!-- Ventajas -->
+	    <!--    <table style="width:100%" class="sheet-center" >
+	            <tr>
+	            	<th colspan="2">Disciplinas</th>
+	            	<th colspan="2">Trasfondos</th>
+	            	<th colspan="2">Virtudes</th>
+	            </tr>
+	            <tr>
+	            	<td><h4><input type="text" name="attr_disciplina_1"></h4></td>
+	                <td>
+	                    <input type="radio" class="sheet-normal sheet-zero" name="attr_disciplina_1" value="0"/><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="1" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="2" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="3" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="4" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="5" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="6" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_disciplina_1" value="7" /><span></span>
+	                </td>
+	                <td><h4><input type="text" name="attr_transfondo_1"></h4></td>
+	                <td>
+	                    <input type="radio" class="sheet-normal sheet-zero" name="attr_transfondo_1" value="0"/><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="1" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="2" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="3" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="4" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="5" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="6" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_transfondo_1" value="7" /><span></span>
+	                </td>
+	                <td><h4>Conciencia / Convicción</h4></td>
+	                <td>
+	                    <input type="radio" class="sheet-normal sheet-zero" name="attr_conciencia" value="0"/><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_conciencia" value="1" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_conciencia" value="2" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_conciencia" value="3" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_conciencia" value="4" /><span></span>
+	                    <input type="radio" class="sheet-normal" name="attr_conciencia" value="5" /><span></span>
+	                </td>
+	        	</tr> -->
+</div>

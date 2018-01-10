@@ -1,7 +1,7 @@
 /*----- fondo -----*/
 
-body {
-    background: url("Vampiro fondo.png");
+.charsheet{
+    
 }
 
 /*-----texto-----*/
@@ -19,7 +19,8 @@ th {
 }
 
 h4 {
-	text-align: center;
+	padding-left: 30px;
+	text-align: left;
     text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
     color:black;
 }
@@ -40,4 +41,26 @@ h1{
 	text-align: center;
     text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black ;
     color:whitesmoke;
+}
+
+td{
+	width: 16%;
+}
+
+.sheet-personaje table{
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+
+.sheet-center {
+    text-align: center
+}
+
+.sheet-left {
+    text-align: left
+}
+
+.sheet-right {
+    text-align: right
 }
